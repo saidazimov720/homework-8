@@ -40,7 +40,8 @@ if (command == "length") {
     alert(arraypop);
   } else if(command == "push"){
     var add = prompt("Enter the argument for add to array:");
-    
+    var pushres = arr.push(add);
+    alert(pushres);
   }
 else {
     alert("Invalid method");
