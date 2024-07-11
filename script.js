@@ -18,16 +18,24 @@ if (command == "length") {
 }
 else if (command == "splice") {
     var arguments = prompt("Enter the arguments");
-    var start = parseInt(arguments[0]);
-    var del = parseInt(arguments[1]);
-    arr.splice(start, del); 
+    var startsp = parseInt(arguments[0]);
+    var delsp = parseInt(arguments[1]);
+    arr.splice(startsp, delsp); 
     alert(arr);
 } else if (command == "concat") {
     var newValue = prompt("Enter a value to concatenate to the array:");
     var newArr = arr.concat([newValue]); 
     alert(newArr);
 } else if(command == "slice"){
+    var arguments2 = prompt("Enter the arguments");
+    var startsl = parseInt(arguments2[0]);
+    var endsl = parseInt(arguments2[1]);
+    arr.slice(startsl, endsl);
 
+    if (arguments2 < 2) {
+        arr.slice(startsl);
+    }
+    alert(arr);
 } 
 else{
     alert("Invalid method");
