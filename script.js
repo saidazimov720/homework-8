@@ -17,7 +17,7 @@ if (command == "length") {
     alert(arr);
 }
 else if (command == "splice") {
-    var start = prompt("Enter the start index for splice:");
+    var arguments = prompt("Enter the arguments");
     var deleteCount = prompt("Enter the number of elements to remove:");
     arr.splice(start, deleteCount); 
     alert(arr);
@@ -26,7 +26,7 @@ else if (command == "splice") {
     var newArr = arr.concat([newValue]); 
     alert(newArr);
 } else if(command == "slice"){
-    var = prompt()
+
 } 
 else{
     alert("Invalid method");
