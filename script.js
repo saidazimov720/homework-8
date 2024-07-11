@@ -9,9 +9,9 @@ var arr = [
     "Sony",
     "Meta",
     "Alphabet.Inc",
-    "Infinity ward",
+    "Infinity Ward",
     "Valve",
-    "Eletronic Arts",
+    "Electronic Arts",
 ];
 
 if (command == "length") {
@@ -20,27 +20,27 @@ if (command == "length") {
     alert(arr.toString());
 } else if (command == "shift") {
     arr.shift();
-    alert(arr);
+    alert(arr.toString());
 } else if (command == "unshift") {
     var value = prompt("Enter a value to add to the beginning of the array:");
     arr.unshift(value);
-    alert(arr);
+    alert(arr.toString());
 } else if (command == "splice") {
-    var arguments = prompt("Enter the argumnets with comma:").split(",");
-    var startsp = parseInt(arguments[0]);
-    var delsp = parseInt(arguments[1]);
+    var spliceArguments = prompt("Enter the arguments with comma:").split(",");
+    var startsp = parseInt(spliceArguments[0]);
+    var delsp = parseInt(spliceArguments[1]);
     arr.splice(startsp, delsp);
-    alert(arr);
+    alert(arr.toString());
 } else if (command == "concat") {
     var newValue = prompt("Enter a value to concatenate to the array:");
     var conArr = arr.concat([newValue]);
-    alert(conArr);
+    alert(conArr.toString());
 } else if (command == "slice") {
-    var arguments2 = prompt("Enter the arguments with comma:").split(",");
-    var startsl = parseInt(arguments2[0]);
-    var endsl = parseInt(arguments2[1]);
+    var sliceArguments = prompt("Enter the arguments with comma:").split(",");
+    var startsl = parseInt(sliceArguments[0]);
+    var endsl = parseInt(sliceArguments[1]);
     var slicedArr = arr.slice(startsl, endsl);
-    alert(slicedArr);
+    alert(slicedArr.toString());
 } else if (command == "join") {
     var addjoin = prompt("Enter the separator:");
     var joinarr = arr.join(addjoin);
@@ -49,9 +49,9 @@ if (command == "length") {
     var arraypop = arr.pop();
     alert(arraypop);
 } else if (command == "push") {
-    var add = prompt("Enter the argument for add to array:");
+    var add = prompt("Enter the argument to add to array:");
     var pushres = arr.push(add);
-    alert(pushres);
+    alert(arr.toString());
 } else {
     alert("Invalid method");
 }
