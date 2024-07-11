@@ -24,7 +24,7 @@ if (command == "length") {
     var newArr = arr.concat([newValue]); 
     alert(newArr);
 } else if (command == "slice") {
-    var arguments2 = prompt("Enter the start and end indices for slice, separated by a comma:").split(',');
+    var arguments2 = prompt("Enter the arguments with comma:").split(',');
     var startsl = parseInt(arguments2[0]);
     var endsl = parseInt(arguments2[1]);
     var slicedArr = arr.slice(startsl, endsl); 
