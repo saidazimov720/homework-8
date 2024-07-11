@@ -4,21 +4,22 @@ var arr = ["Lorem ipsumabo doloribus distinctio perspiciatis a harum, illum enim
 
 if (command == "length") {
     arr.length();
-}  else if(command == toString()) {
+}  else if(command == "toString") {
     arr.toString();
     alert(arr);
 }
- else if(command == shift()) {
+ else if(command == "shift") {
     arr.shift();
     alert(arr);
 }
- else if(command == unshift()) {
+ else if(command == "unshift") {
     arr.unshift();
     alert(arr);
 }
- else if(command == splice()) {
-    var splicecom = prompt("Enter the values for splice method:");
-    arr.splice(splicecom);
+else if (command == "splice") {
+    var start = prompt("Enter the start index for splice:");
+    var deleteCount = prompt("Enter the number of elements to remove:");
+    arr.splice(start, deleteCount); 
     alert(arr);
 } else if(command == concat()) {
     arr.concat(arr);
