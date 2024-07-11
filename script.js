@@ -25,6 +25,9 @@ else if (command == "splice") {
     var newValue = prompt("Enter a value to concatenate to the array:");
     var newArr = arr.concat([newValue]); 
     alert(newArr);
-} else{
+} else if(command == "slice"){
+    var = prompt()
+} 
+else{
     alert("Invalid method");
 }
