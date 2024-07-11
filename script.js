@@ -21,7 +21,10 @@ else if (command == "splice") {
     var deleteCount = prompt("Enter the number of elements to remove:");
     arr.splice(start, deleteCount); 
     alert(arr);
-} else if(command == concat()) {
-    arr.concat(arr);
-    alert(arr);
+} else if (command == "concat") {
+    var newValue = prompt("Enter a value to concatenate to the array:");
+    var newArr = arr.concat([newValue]); 
+    alert(newArr);
+} else{
+    alert("Invalid method");
 }
