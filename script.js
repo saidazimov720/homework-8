@@ -18,8 +18,9 @@ if (command == "length") {
 }
 else if (command == "splice") {
     var arguments = prompt("Enter the arguments");
-    var deleteCount = prompt("Enter the number of elements to remove:");
-    arr.splice(start, deleteCount); 
+    var start = parseInt(arguments[0]);
+    var del = parseInt(arguments[1]);
+    arr.splice(start, del); 
     alert(arr);
 } else if (command == "concat") {
     var newValue = prompt("Enter a value to concatenate to the array:");
