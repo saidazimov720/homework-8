@@ -29,6 +29,12 @@ if (command == "length") {
     var endsl = parseInt(arguments2[1]);
     var slicedArr = arr.slice(startsl, endsl); 
     alert(slicedArr);
-} else {
+} else if (command == "join") {
+    var addjoin = prompt("Enter the separator:");
+    var joinarr = arr.join(addjoin); 
+    alert(joinarr);
+}
+
+else {
     alert("Invalid method");
 }
