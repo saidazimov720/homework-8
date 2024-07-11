@@ -7,3 +7,9 @@ if (command == length()) {
 }  else if(command == toString()) {
     arr.toString();
 }
+ else if(command == shift()) {
+    arr.shift();
+}
+ else if(command == unshift()) {
+    arr.unshift();
+}
