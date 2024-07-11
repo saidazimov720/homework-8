@@ -48,6 +48,7 @@ if (command == "length") {
 } else if (command == "pop") {
     var arraypop = arr.pop();
     alert(arraypop);
+    alert(arr);
 } else if (command == "push") {
     var add = prompt("Enter the argument to add to array:");
     var pushres = arr.push(add);
