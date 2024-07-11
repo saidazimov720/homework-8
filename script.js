@@ -1,6 +1,7 @@
 var command = prompt("Enter your array method:");
 
-var arr = ["Lorem ipsumabo doloribus distinctio perspiciatis a harum, illum enim, id ea! Delectus."];
+var arr = ["Oracle", "IBM", "Microsoft", "SLK", "Apple", "Sony", "Meta", 
+    "Alphabet.Inc", "Infinity ward", "Valve", "Eletronic Arts"];
 
 if (command == "length") {
     alert(arr.length); 
