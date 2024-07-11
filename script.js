@@ -21,8 +21,8 @@ if (command == "length") {
     alert(arr);
 } else if (command == "concat") {
     var newValue = prompt("Enter a value to concatenate to the array:");
-    var newArr = arr.concat([newValue]); 
-    alert(newArr);
+    var conArr = arr.concat([newValue]); 
+    alert(conArr);
 } else if (command == "slice") {
     var arguments2 = prompt("Enter the arguments with comma:").split(',');
     var startsl = parseInt(arguments2[0]);
