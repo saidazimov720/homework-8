@@ -20,7 +20,7 @@ if (command == length()) {
     var splicecom = prompt("Enter the values for splice method:");
     arr.splice(splicecom);
     alert(arr);
-} else if(command == unshift()) {
-    arr.unshift();
+} else if(command == concat()) {
+    arr.concat(arr);
     alert(arr);
 }
