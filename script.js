@@ -35,7 +35,13 @@ if (command == "length") {
     var joinarr = arr.join(addjoin); 
     alert(joinarr);
 }
-
+  else if(command == "pop"){
+    var arraypop = arr.pop();
+    alert(arraypop);
+  } else if(command == "push"){
+    var add = prompt("Enter the argument for add to array:");
+    
+  }
 else {
     alert("Invalid method");
 }
